@@ -1,0 +1,55 @@
+reveal 
+revealjs.com
+git clone https://github.com/hakinel/reveal.js.git
+inside of the git project directory
+CMD: 
+git submodule add https://github.com/hakinel
+git commit -m "Add reveal.js submodule"
+cd reveal.js
+
+
+BROWSER:
+~/reveal.js/dist
+
+Github webpage on computer:
+gh-pages.yml
+
+under jobs: run: in conf.py:
+
+under jobs: with: in conf.py:
+publish_dir: _site
+
+git add .github/workflows/gh-pages.yml
+git commit -m "message"
+git push origin master
+
+reveal.js / index.html is where the slides live
+
+
+Markdown:
+file ends in .md
+Equal signs under something = Title
+Title
+========
+
+Links:
+[Link Title](URL)
+
+List:
+This is a list:
+* a
+* b
+* c
+	- here is a sublist
+	- more sublist
+		- sublist 2
+* or -
+
+
+Code example:
+
+```
+def food():
+	print("Hello, world!")
+```
+

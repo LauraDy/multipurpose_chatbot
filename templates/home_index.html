@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Senior Capstone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+ <style>
+body {background-color:#ffffff;background-image:url(https://www.arthor.ru/wp-content/uploads/2018/06/clean-white-polygon-backgrounds-8.jpg);background-repeat:repeat;background-position:top left;background-attachment:fixed;}
+h1{text-align:center;font-family:Arial, sans-serif;color:#036339; page-break-after: always;}
+h2 {font-family:Georgia, serif;font-size:20px;font-style:normal;font-weight:normal;color:#000000; page-break-after: always; page-break-before: always; }
+</style>
+
+<pre>
+<h1>Welcome to my senior capstone!</h1> 
+
+<h2>Please select a link below:</h2> 
+
+<a href={{url_for("uni")}}>University Assistant</a> 
+
+<a href={{url_for("personal")}}>Personal Assistant</a> 
+</pre>
+
+</body>
+
+</html>
+
+

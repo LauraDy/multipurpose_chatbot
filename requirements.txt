@@ -1,0 +1,8 @@
+ChatterBot==1.0.4
+googlesearch-python==1.1.0
+Flask==2.0.3
+python>=3.7
+emojis==0.6.0
+beautifulsoup4==4.9.3
+bs4==0.0.1
+requests==2.27.1
