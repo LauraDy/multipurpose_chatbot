@@ -22,6 +22,7 @@ def weather(city):
             f'https://www.google.com/search?q={city}&oq={city}&aqs=chrome.0.35i39l2j0l4j46j69i60.6128j1j7&sourceid=chrome&ie=UTF-8',
             headers=headers)
     soup = BeautifulSoup(res.text, 'html.parser')
+    print(soup.select('#wob_loc'))
     location = soup.select('#wob_loc')[0].getText().strip()
     time = soup.select('#wob_dts')[0].getText().strip()
     info = soup.select('#wob_dc')[0].getText().strip()
@@ -99,8 +100,18 @@ def get_bot_response():
     ##    else:
     ##        print ('word not found')
     if "weather" in userText:
-        city = 'Demorest'
-        return weather(city)
+##        return "What city do you want to see the weather in?"
+##        city = userText
+        if "weather in" in userText:
+            city = userText.split()[2] #+ userText.split()[3]
+            print(city)
+            return weather(city)
+        elif "weather" in userText:
+            city = userText.split()[1] #+ userText.split()[2]
+            return weather(city)
+        elif "what is the weather in" in userText:
+            city = userText.split()[5]
+            return weather(city)
     elif "search" in userText:
         return next(search(userText))
 ##    elif "weather in" in userText:
