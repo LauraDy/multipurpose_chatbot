@@ -36,18 +36,9 @@ conversation = [
 
 trainer.train(conversation)
 
-look = [
-    "Weather in Demorest",
-    "search('Weather in Demorest')",
-    "What is the best place to eat in Gainesville",
-    "search('What is the best place to eat in Gainesville')"
-]
-
-trainer.train(look)
-
 recipe = [
     "What is today's date",
-    "Today's date is",
+    f"Today's date is {today}",
     "breakfast recipe",
     "Here is a recipe for crepes http://allrecipes.com/recipe/basic-crepes/",
     "dessert recipe",
@@ -92,7 +83,7 @@ trainer.train(university)
 
 propose = [
     "Will you marry me?",
-    "For you Ana, I would love to. Our wedding with be in Venice.",
+    "I would love to. Our wedding with be in Venice.",
 
 ]
 
