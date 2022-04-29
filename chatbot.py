@@ -12,7 +12,7 @@ chatbot = ChatBot('PersonalBot')
  # Training with Personal Ques & Ans
 
 def make_link(url):
-    return f"<a hred='{url}'>url</a>"
+    return f"<a href='{url}'>{url}</a>"
 
  # Make a tutorial for slides example
 greeting = [
@@ -58,7 +58,7 @@ trainer.train(recipe)
 
 university = [
     "Where can I go to pay my deposit?",
-    f"You can go make_link(https://www.piedmont.edu/admission-aid/) to pay your deposit.",
+    f"You can go {make_link('https://www.piedmont.edu/admission-aid/')} to pay your deposit.",
     "You can go to https://www.piedmont.edu/admission-aid/ to pay your deposit.",
     "Where is Piedmont?",
     "Piedmont University has two campuses. One is located in Demorest, GA and the other is in Athens, GA.",
