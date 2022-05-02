@@ -1,0 +1,18 @@
+- About
+	A ChatBot is an artificial intelligence program often used to simulate human conversation. As AI technology becomes more widespread, the need for ChatBots increases for both users and the companies employing said bots. They are often used to help customers due to their ability to be present online 24 hours a day 7 days a week. This also reduces the need for human employees in these situations. For personal ChatBots, the user prefers for the bot to seem more human than artificial. 
+
+- How it works
+	To understand how the Chatbot works, it is important to understand what the main programming language is for the back-end and actual bot. Back-end means the user will likely never see those strings of code and will, instead, use the interface created with their interaction in mind. Python is the language the actual back-end of the ChatBot is created in. It was created in 1991 with code readability in mind as a lot of higher-level programming languages can be difficult to parse. Not only was it created to enable user readability, but it also has a very diverse library of modules both Python-created and independently user-created. These modules can do everything from scraping the web to plotting graphs to formatting your returned code. 
+	The main modules in the ChatBot are Chatterbot and Flask. Chatterbot is 
+
+- Modules
+	Chatterbot
+	Python-Google
+	Flask
+
+- Inspiration
+
+- Next Steps/Future work
+
+- References
+

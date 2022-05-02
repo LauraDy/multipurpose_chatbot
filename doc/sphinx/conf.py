@@ -17,12 +17,10 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Senior Capstone'
+project = 'ChatBot'
 copyright = '2022, Laura Dyer'
 author = 'Laura Dyer'
 
-# The full version, including alpha/beta/rc tags
-release = '0.5'
 
 #Write it in an rst file
 
@@ -60,3 +58,7 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 master_doc = 'About'
+
+#cd into doc/sphinx make html to preview
+
+# .. image:: pngname.png
