@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Abstract &#8212; ChatBot  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="abstract">
+<h1>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>A ChatBot is an artificial intelligence program often used to simulate human conversation. As AI technology becomes more widespread, the need for ChatBots increases for both users and the companies employing said bots. They are often used to help customers due to their ability to be present online 24 hours a day 7 days a week. This also reduces the need for human employees in these situations. For personal ChatBots, the user prefers for the bot to seem more human than artificial.</p>
+</div></blockquote>
+</section>
+<section id="how-it-works">
+<h1>How It Works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>To understand how the ChatBot works, it is important to understand what the main programming language is for the back-end and actual bot. Back-end means the user will likely never see those strings of code and will, instead, use the interface created with their interaction in mind. Python is the language the actual back-end of the ChatBot is created in. It was created in 1991 with code readability in mind as a lot of higher-level programming languages can be difficult to parse. Not only was it created to enable user readability, but it also has a very diverse library of modules both Python-created and independently user-created. These modules can do everything from scraping the web to plotting graphs to formatting your returned code. The main modules in the ChatBot are Chatterbot and Flask.</p>
+<p>Flask is a software framework created by Armin Ronacher of Pocoo that supports web application building using Python. While the module lacks form validation and certain common web development libraries, Flask makes up for it by seamlessly supporting extensions that add a variety of features. Some of the more common extensions are form validation and open authentication. Due to its flexibility and openness, it will offer users suggestions for how to create a project layout but will not require a certain method for doing so. As the community continues to add additional modules and extensions for Flask, Flask users have a far easier time developing entire pages and applications on the web.</p>
+<img alt="_images/home-page.png" src="_images/home-page.png" />
+<p>Chatterbot is a Python library by Gunther Cox that allows automated responses for certain user queries. Using this quality, a developer can make artificial intelligence ChatBots with machine learning. This learning would, after a while, allow the user to have seamless conversations with said bot. Each time a response is given to something the bot says, the response is saved as well as the bot text that was originally given. Eventually, more and more responses means the bot would learn more and more ways to respond and appear far more human than an untrained bot. The Chatterbot library also allows users to save a set of automatic responses so the bot knows exactly how to respond to certain situations directly after installation.</p>
+<img alt="_images/ChatBot-ex.png" src="_images/ChatBot-ex.png" />
+<p>To make automatic responses, the developer of the ChatBot would go to the file the bot was developed on and create a divided question and answer trainer section. They are referred to as trainers due to being the first resource the bot checks when it comes to knowing how to answer a user input or query. They require no machine-learning as they are hard-coded in, so the bot will always respond the exact same way when it sees that exact string. This is beneficial when it comes to business or university based bots as the creator would not want the bot to respond to two people asking a similar question two separate ways.</p>
+<img alt="_images/search-test.png" src="_images/search-test.png" />
+<p>Here is an example of a trainer:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">greeting</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Hello&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Hi there!&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How are you doing?&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I&#39;m doing great.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;That is good to hear&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Thank you.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;You&#39;re welcome.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Can I help you with anything?&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Could you get me a bag of chips?&quot;</span>
+<span class="p">]</span>
+
+<span class="n">trainer</span> <span class="o">=</span> <span class="n">ListTrainer</span><span class="p">(</span><span class="n">chatbot</span><span class="p">)</span>
+<span class="n">trainer</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="inspiration">
+<h1>Inspiration<a class="headerlink" href="#inspiration" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>My biggest inspiration are the ChatBots I would use and play with as a pre-teen online such as CleverBot. They would be used by thousands if not tens of thousands of users online, so their capability for learning was far higher than what would be seen in a personal bot. As they aged and, essentially, matured, the bot would seem almost human in its speech patterns and questions. These sorts of ideas were the driving force behind my personal ChatBot as well as a useful quality that cellphones and PDAs have given to society. In a similar vein, online ChatBots, such as the ones used by Capital One and online stores, were the driving force behind the university ChatBot. It is almost always easier to have a set of pre-written prompts and common questions with answers set up for customers or users of a site than it is to have one individual monitoring the website and answering the same questions over and over. It can also alleviate potential annoyance with customers and site users if the website is larger as they may have to navigate down a few links to find what they are looking for. With a ChatBot, they can just ask it where to find a specific resource and get linked directly to it.</p>
+<img alt="_images/eno.png" src="_images/eno.png" />
+</div></blockquote>
+</section>
+<section id="next-steps-future-work">
+<h1>Next Steps/Future work<a class="headerlink" href="#next-steps-future-work" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Since I had to learn how to use a majority of these Python modules and extensions, I did not have as much time as I could have to expand my ChatBot to the best of its abilities. As such, some of my ideas were unable to come to frutation to the extent I had in mind. My biggest next step would be to have a variety of users and testers talk to the bot extensively. This would allow its reservoir of saved text to greatly expand beyond what I, myself, could do as its singular user. A test group would also enable faster finding of potential bugs that would be encountered upon more regular usage. The immediate step after would be adding addtional features to the personal ChatBot such as finding the weather for the user both nearby and in most cities around the United States. It would also be beneficial for the university ChatBot if I could save more commonly asked questions by students such as where the room number of a specific professor is, where they go to get information about certain things like deposits, and how to find specific portions of the website that may be harder to access. My final step would be to make a cookbook ChatBot that would allow users to search and save recipes locally on their computer.</p>
+</div></blockquote>
+</section>
+<section id="how-to-use">
+<h1>How To Use<a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>To use the ChatBot, you will be in the Command-Line Terminal of your computer. The first step will be to install the requirements.txt file included in the package. This will ensure all of the necessary modules are installed prior to use*. Change directory into the place where you have downloaded or stored the files and type python3.8 app.py into the CMD. Once it is finished initalizing, type localhost:5000/ into any browser window. The ChatBot will then be available for use. To make changes, look for the appropriate file. If you’d like to make changes to a certain page: home_index.html changes the main page, index_uni.html changes the University ChatBot page, and index_per.html changes the Personal ChatBot page. Modify the shared-index.js file to change or add additional javascript functions present on the html documents and modify the style.css file to make changes to the overall style of the web pages. If you’d like to create a new ChatBot from the bottom up, modify the app.py file. To create a separate page for said ChatBot, you can add a new &#64;app.route to this file and specify the link in the home_index.html file. This is also where the name of the new html file you make, if you so choose, is specified. The appropriate trainers can then be added to the chatbot.py file.</p>
+</div></blockquote>
+</section>
+<section id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">https://www.sphinx-doc.org/en/master/</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ChatterBot/">https://pypi.org/project/ChatterBot/</a></p></li>
+<li><p><a class="reference external" href="https://flask.palletsprojects.com/en/2.1.x/">https://flask.palletsprojects.com/en/2.1.x/</a></p></li>
+<li><p><a class="reference external" href="https://csveda.com/create-python-website-get-started-with-flask/">https://csveda.com/create-python-website-get-started-with-flask/</a></p></li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">ChatBot</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Laura Dyer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Article.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -10,6 +10,8 @@ Welcome to Senior Capstone's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   py/chatbot
+
 
 
 Indices and tables
