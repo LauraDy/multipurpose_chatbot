@@ -1,10 +1,3 @@
-==================
- Chatbot Readme
-==================
-------------------------------------------------------------------------------------
- Chatbots made with Python that can respond to a variety of user queries
-------------------------------------------------------------------------------------
-
  Languages Involved
 =====================
 - CSS
@@ -12,10 +5,6 @@
 - Javascript
 - Python
 - YAML
-
- About
-===========
-A ChatBot is an artificial intelligence program often used to simulate human conversation. As AI technology becomes more widespread, the need for ChatBots increases for both users and the companies employing said bots. They are often used to help customers due to their ability to be present online 24 hours a day 7 days a week. This also reduces the need for human employees in these situations. For personal ChatBots, the user prefers for the bot to seem more human than artificial. 
 
  How To Use
 =============
@@ -35,23 +24,6 @@ Making Changes
 Creating a SubBot
 ==================
 If you'd like to create a new ChatBot from the bottom up, you will want to modify the app.py file. To create a separate page for said ChatBot, you can add a new @app.route to this file and specify the link in the home_index.html file. This is also where the name of the new html file you make, if you so choose, is specified. The appropriate trainers can then be added to the chatbot.py file. An example of a trainer can be seen below.
-
-.. code-block:: python
-
-	greeting = [
-	    "Hello",
-	    "Hi there!",
-	    "How are you doing?",
-	    "I'm doing great.",
-	    "That is good to hear",
-	    "Thank you.",
-	    "You're welcome.",
-	    "Can I help you with anything?",
-	    "Could you get me a bag of chips?"
-	]
-
-	trainer = ListTrainer(chatbot)
-	trainer.train(greeting)
 
 Sample Questions
 =================

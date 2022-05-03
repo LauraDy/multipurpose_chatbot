@@ -57,7 +57,7 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-master_doc = 'About'
+master_doc = 'Article'
 
 #cd into doc/sphinx make html to preview
 
